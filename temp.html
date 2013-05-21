@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Developer || Jason</title>
+  <meta charset="utf-8">
+  <link href='images/favicon.ico' rel='shortcut icon'>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div id="main_bg">
+    <div class="glow"></div>
+      <div class="spinner"></div>
+        <div class="main_container">
+          <div class="container_12">
+            <header>
+              <div class="grid_12">
+                <div id="back"><a href="#!/splash">Back</a></div>
+                <h1><a class="hide_text" href="#!/splash" id="logo">jk</a></h1>
+                <div class="description">
+                  <div class="inner">
+                    Hi!  I'm Jason.  I am a Front-End Engineer.
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <ul class="social">
+                <li>
+                  <div class="icons">
+                    <a href="https://www.facebook.com/profile.php?id=1578444359" title="Facebook"><img src="images/socico1.png" alt=""></a>
+                    <a id="github" href="https://github.com/jasonk54" title="GitHub"><img src="images/github-icon.png" alt=""></a>
+                    <a href="http://www.linkedin.com/pub/jason-kang/11/674/86b" title="LinkedIn"><img src="images/socico4.png" alt=""></a>
+                  </div>
+                </li>
+              </ul>
+              <div class="clear"></div>
+            </header>
+            <nav class="splashHolder">
+             <ul class="splash_menu">
+              <li class="grid_3">
+                <a href="#!/about">
+                  <em class="menu_icon"><img src="images/splash_icon1.png" alt=""></em>
+                  <span>About</span>
+                </a>
+              </li>
+              <li class="grid_3">
+                <a href="#!/portfolio">
+                    <em class="menu_icon"><img src="images/splash_icon2.png" alt=""></em>
+                    <span>Projects</span>
+                </a>
+              </li>
+              <li class="grid_3 last-col">
+                <a href="mailto:jasonk54@gmail.com">
+                  <em class="menu_icon"><img src="images/splash_icon4.png" alt=""></em>
+                  <span>Contact</span>
+                </a>
+              </li>
+             </ul>
+            </nav>
+            <section id="content">
+              <ul>
+                <li id="splash"></li>
+                <div class="clear"></div>
+                <li id="about" style="display:none">
+                  <p>Hello! I’m Jason. I am from the San Francisco Bay area.</p>
+                    <p>I used to be a Security Consultant and have worked in that field for quite some time now.</p>
+                    <p>I am now a student at <a href="http://www.hackreactor.com/">Hack Reactor.</a>
+                    <h2>I am passionate about JavaScript.</h2></p>
+                </li>
+                <div class="clear"></div>
+                <div class="clear"></div>
+                <li id="portfolio" style="display:none">
+                    <h2>OpenRecess</h2>
+                    <p>"Remember recess?  Kids play everyday, but few adults find time for social recreation.<a href="http://openrecess.com/">  OpenRecess</a> is an on-demand network for fun and games in real life.  What are you playing?"</p>
+                    <p>OpenRecess is a rich single-page client app that was created with the following technologies: Backbone.js with Marionette.js, Node.js, Express.js.  Full javascript - front and server-side.</p>
+                    <h2>ChestBump</h2>
+                    <p><a href="http://chestbump.meteor.com/">ChestBump</a> is an app that I built in span of 6 days using Meteor.js and Twilio API.  It is event(sports) planning app that utlize email and SMS texts to create, coordinate, and invite users in the social network.<p>
+                </li>
+                <div class="clear"></div>
+                <li id="contacts">
+                </li>
+              </ul>
+            </section>
+            <footer>
+            </footer>
+          </div>
+        </div>
+      </div>
+    <script>
+
+    $(window).load(function() {
+      $("#content").fadeOut();
+      $(".splashHolder").click(function(){
+        $("#content").fadeIn();
+        $("#back").show();
+      });
+      $(".icons, .icons a").slideToggle('slow');
+      $('.spinner').fadeOut();
+      $('body').css({overflow:'auto', 'min-height':'820px'});
+      $('.hide_text, #back').click(function(){
+        $('#back').hide();
+      });
+    });
+    </script>
+  </body>
+</html>
